@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const Home: FC = () => {
   return (
-    <div className="flex flex-col items-center">
+    <div className="container mx-auto flex flex-col items-center">
       <div className="mx-12">
         <h1 className="mt-12 text-center text-6xl text-primary-light font-bold">
           Resume Craft
@@ -31,10 +31,10 @@ export const Home: FC = () => {
       </div>
       <div className="my-12 text-4xl flex flex-col gap-y-8">
         <span className="font-bold">Are you ready?</span>
-        <Link to={"/build"} className="link">
+        <Link to={"/edit-resume"} className="link">
           <button
-            className="border 
-            border-4 
+            className="
+            border-2 
             border-primary-light
             px-6 
             py-2 
@@ -42,7 +42,7 @@ export const Home: FC = () => {
             hover:text-white-smoke 
             hover:bg-primary-light
             transition-hover 
-            delay-300 
+            delay-100 
             ease-in-out
             text-primary-light
             cursor-pointer

@@ -21,6 +21,11 @@ export type TUserContext = {
   user: TUser;
   setUser: Dispatch<SetStateAction<TUser>>;
 };
+
+export type TLoaderContext = {
+  loading: boolean;
+  setLoading: Dispatch<SetStateAction<boolean>>;
+};
 export type TContextProps = {
   children: ReactNode;
 };

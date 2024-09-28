@@ -20,6 +20,7 @@ export default {
     gridTemplateColumns: {
       "accordion-item-grid": "15% 80% 5%",
       "accordion-nested-item-grid": "95% 5%",
+      "resume-form-grid": "50% 50%",
     },
   },
 };

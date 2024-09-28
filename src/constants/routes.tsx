@@ -1,5 +1,6 @@
-import { Dashboard, Home } from "../pages";
-
+import { Dashboard } from "../pages";
+import { EditResume } from "../components";
+import { Home } from "../components";
 /*
  *
  *<Right><Route path='/' element={<Home />} />
@@ -21,6 +22,10 @@ export const routes = [
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "edit-resume",
+        element: <EditResume />,
       },
     ],
   },
