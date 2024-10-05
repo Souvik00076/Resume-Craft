@@ -33,39 +33,32 @@ export type TTechnicalSkill = {
   rate: string;
 };
 
-export type TInterest = {
-  hobbie: string;
-};
-
 export type TPersonal = {
   technicalskill: TTechnicalSkill[];
-  interest: TInterest[];
+  interest: { hobbie: string }[];
   name: string;
-  lastname: string;
+  lastName: string;
   date: string;
   email: string;
   mob: string;
   city: string;
   country: string;
-  image: string;
+  profilePhoto: string;
   title: string;
-  quote: string;
+  summary: string;
 };
-
 export type TProject = {
   name: string;
   tech: string;
   des: string;
   link: string;
 };
-
 // Define the state type
-
 export type TResumeState = {
   experience: TExperience[];
   course: TCourse[];
   education: TEducation[];
   personal: TPersonal;
-  project: TProject[];
+  projects: TProject[];
   links: { [key: string]: string };
 };

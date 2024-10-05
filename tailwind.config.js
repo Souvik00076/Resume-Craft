@@ -12,6 +12,7 @@ export default {
       "primary-dark": "#07334d",
       "nav-color": "#0f172a",
       "white-smoke": "#F5F5F5",
+      white: "#FFFFFF",
       "border-for": "#A9A9A4",
     },
     boxShadow: {

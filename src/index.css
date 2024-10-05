@@ -18,11 +18,26 @@
     @apply mt-[30px]  text-2xl font-bold text-center w-full;
   }
   .edit-resume-item input {
-    @apply w-full px-4 py-2 border-2 rounded-md border-primary-light;
+    @apply w-full px-2 input-primary;
   }
   .input-primary {
-    @apply py-2 border-2 rounded-md border-primary-light;
+    @apply outline-none py-2 border-2 rounded-md border-primary-light;
   }
+  .input-primary-bottom {
+    @apply outline-none py-2 border-b-2  border-primary-light;
+  }
+  .input-field-array-dynamic > div > input {
+    @apply w-[100%] outline-none border-2 border-primary-light rounded-md p-[10px];
+  }
+  .input-field-array-dynamic > div {
+    @apply relative;
+  }
+}
+.input-field-array-dynamic {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  justify-content: center;
 }
 .opac-bg {
   background-color: "#00A3FF";

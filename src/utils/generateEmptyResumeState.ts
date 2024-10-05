@@ -1,24 +1,64 @@
-import { ResumeState } from "../@types";
+import { TResumeState } from "../@types";
 
-export const generateEmptyResumeState = (): ResumeState => ({
-  experience: [],
-  course: [],
-  education: [],
+export const generateEmptyResumeState = (): TResumeState => ({
+  experience: [
+    {
+      company: "",
+      description: "",
+      worktitle: "",
+      tags: "",
+      yearfrom: "",
+      yearto: "",
+      present: false,
+    },
+  ],
+  course: [
+    {
+      name: "",
+      provider: "",
+    },
+  ],
+  education: [
+    {
+      degree: "",
+      grade: "",
+      university: "",
+      yearfrom: "",
+      yearto: "",
+      gradetype: "percentage",
+    },
+  ],
   personal: {
-    technicalskill: [],
-    interest: [],
+    technicalskill: [
+      {
+        skill: "",
+        rate: "",
+      },
+    ],
+    interest: [
+      {
+        hobbie: "",
+      },
+    ],
     name: "",
-    lastname: "",
+    lastName: "",
     date: "",
     email: "",
     mob: "",
     city: "",
     country: "",
-    image: "",
+    profilePhoto: "",
     title: "",
-    quote: "",
+    summary: "",
   },
-  project: [],
+  projects: [
+    {
+      name: "",
+      tech: "",
+      des: "",
+      link: "",
+    },
+  ],
   links: {
     linkedin: "",
     github: "",
